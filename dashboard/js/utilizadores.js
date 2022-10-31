@@ -3,7 +3,7 @@ $(document).ready(
     function(){
         var user = JSON.parse(window.localStorage.getItem('user'));
         var username = document.getElementById("usernameDB");
-        username.textContent = user.user_name;
+        username.textContent = user.utilizador_name;
         $.ajax({
             url: "https://cors-anywhere.herokuapp.com/https://bandini.fly.dev/api/users",
             type: "GET",
